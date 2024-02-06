@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNIS FAN HERE</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Times New Roman", Times, serif;
+      background: linear-gradient(to bottom, #f7ddf2, #ff88c3);
+      color: #fa82c4;
+    }
+
+    
+
+    #welcome-section {
+      text-align: center;
+      padding: 150px 0 100px;
+    }
+    
+   
+    
+    #click-here {
+      margin-top: 10px;
+      display: inline-block;
+      background: #ff549b;
+      border: none;
+      color: #fff;
+      padding: 15px 45px;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    #click-here:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #fd6dd9;
+      border-radius: 5px;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    #click-here:hover {
+      color: #fff;
+    }
+
+    #click-here:hover:after {
+      left: 0;
+      width: 100%;
+    }
+
+    #click-here:active {
+      top: 2px;
+    }
+
+    #hidden-content {
+        display: none;
+        text-align: center;
+    }
+    
+  
+
+    
+    #artist-image {
+        display: block; 
+        margin: 0 auto;
+        width: 50%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+     
+      
+    }
+
+    #line-box {
+      width: 55%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    #box-image {
+        display: block; 
+        margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #artist-music {
+      margin-top: 10px;
+      width: 55%;
+      height: 55px;
+      background-color: #f595d5;
+      
+      border-radius: 5px;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 16px;
+      padding: 5px;
+    }
+
+    #music-text {
+        text-align: left; 
+      margin-top: 10px;
+      font-size: 35px;
+    }
+    h1 {
+  font-size:70px;
+}
+h2 {
+  font-size: 40px;
+}
+
+#separate-image img {
+  display: block; 
+        margin: 0 auto;
+        width: 99.5%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 15px srgba(0, 0, 0, 0.6);
+      opacity: 0.7;
+}
+
+#text-text{
+  text-align: left; 
+      margin-top: 10px;
+      font-size: 20px;
+}
+
+#slideshow-container {
+  width: 100%;
+    max-width: 55%; 
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center; 
+    }
+
+    .slides {
+      display: none;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+
+
+  </style>
+</head>
+<body>
+
+  
+
+    <div id="welcome-section">
+        <h1>Hi! Rorentsu Shiryuu </h1> 
+        <h2> ! We Are UNIS ! </h2> 
+        <div>
+          <img id="artist-image" src="image/unnis.png" alt="Artist Image" />
+        </div>
+        
+        <a id="click-here" onclick="toggleContent()">Click Here</a>
+    </div>
+
+    <div id="hidden-content">
+      <div id="separate-image">
+        <img src="image/unis1.jpg" alt="Separate Image" />
+    </div>
+        <div id="line-box">
+            <img id="box-image" src="image/unis2.jpg" alt="Box Image">
+            <audio id="artist-music" controls>
+                <source src="image/miracle.mp3" type="audio/mp3">
+               
+            </audio>
+            <p id="music-text">Miracle By: Universe Ticket Cover</p>
+            <p id="text-text">Sana UNIS mag visit kayo sa Philippines </p>
+            <p id="text-text"> Excited na ako sa first debut song niyo</p>
+              <p id="text-text"> I Love You All</p>
+              
+              
+        </div>
+        
+    </div>
+    
+    <div id="slideshow-container">
+      <img class="slides" src="image/unis1.jpg" alt="Slide 1">
+      <img class="slides" src="image/unis2.jpg" alt="Slide 2">
+      <img class="slides" src="image/unis3.jpg" alt="Slide 3">
+      <img class="slides" src="image/unis4.jpg" alt="Slide 4">
+      <img class="slides" src="image/unis5.jpg" alt="Slide 5">
+      <img class="slides" src="image/unis6.jpg" alt="Slide 6">
+      <img class="slides" src="image/unis7.jpg" alt="Slide 7">
+      <img class="slides" src="image/unis9.jpg" alt="Slide 8">
+      <img class="slides" src="image/unis10.jpg" alt="Slide 9">
+      <img class="slides" src="image/unis11.jpg" alt="Slide 10">
+      <img class="slides" src="image/unis12.jpg" alt="Slide 11">
+      <img class="slides" src="image/unis8.jpg" alt="Slide 12">
+    </div>
+
+  <script>
+    function toggleContent() {
+        var welcomeSection = document.getElementById("welcome-section");
+        var hiddenContent = document.getElementById("hidden-content");
+
+        welcomeSection.style.display = "none";
+        hiddenContent.style.display = "block";
+        var slideIndex = 0;
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+}
+
+showSlides();
+    }
+  </script>
+
+</body>
+</html>
